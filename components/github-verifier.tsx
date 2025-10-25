@@ -452,9 +452,9 @@ export function GithubVerifier() {
                 size="lg"
                 className="w-full bg-green-600 hover:bg-green-700"
               >
-                {uploading && "📤 Uploading to Lighthouse..."}
-                {minting && "🪙 Minting Tokens..."}
-                {!uploading && !minting && "🎁 Mint DataCoin & Earn 10 GIT"}
+                {uploading && " Uploading to Lighthouse..."}
+                {minting && " Minting Tokens..."}
+                {!uploading && !minting && " Mint DataCoin & Earn 10 GIT"}
               </Button>
             </div>
           )}
