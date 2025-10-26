@@ -1,3 +1,5 @@
+export const runtime = 'nodejs' // Add this line at the very top
+
 import { NextRequest, NextResponse } from "next/server"
 import lighthouse from "@lighthouse-web3/sdk"
 import crypto from "crypto"
