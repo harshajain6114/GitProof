@@ -12,7 +12,6 @@
 
 
 
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   webpack: (config, { isServer }) => {
     if (!isServer) {
@@ -22,14 +21,15 @@ const nextConfig = {
         net: false,
         tls: false,
         crypto: false,
-      }
+      };
     }
-    
-    // Fix for ethers/wagmi
-    config.externals.push('pino-pretty', 'lokijs', 'encoding')
-    
-    return config
-  },
-}
 
-module.exports = nextConfig
+    // Fix for ethers/wagmi
+    config.externals.push('pino-pretty', 'lokijs', 'encoding');
+
+    return config;
+  },
+};
+
+export default nextConfig;
+
