@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={`${geist.className} antialiased bg-background text-foreground`}>
         <Web3Provider>
-          {/* <Navbar /> */}
+          <Navbar />
           {children}
           <Analytics />
         </Web3Provider>
